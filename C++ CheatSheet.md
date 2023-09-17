@@ -266,3 +266,27 @@ int main() {
     // Saída: You are an adult
 ...
 ```
+
+## Switch
+
+- Utilizado para evitar vários ```else if```
+- Mais eficiente e mais legível
+
+```c++
+...
+    int month;
+    ...
+    switch (month) {
+        case 1:
+            std::cout << "January" << std::endl;
+            break;
+        case 2:
+            std::cout << "February" << std::endl;
+            break;
+        ...
+        case default:
+            std::cout << "Invalid Month" << std::endl;
+            break;
+    }
+
+```
