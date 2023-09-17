@@ -1,5 +1,16 @@
 # C++ Cheat Sheet
 
+## Sumário
+
+- [Sumário](#sumário)
+- [Comandos Gerais](#comandos-gerais)
+  - [Operadores Aritméticos](#operadores-aritméticos)
+- [Datatypes (Dados Básicos)](#datatypes-dados-básicos)
+- [Namespace](#namespace)
+- [Typedefs/Using](#typedefsusing)
+- [Type Conversion (Conversão de Tipos)](#type-conversion-conversão-de-tipos)
+- [Input](#input)
+
 ## Comandos Gerais
 
 - ``` //Comentários ```
@@ -17,23 +28,34 @@
   }
   ```
 
-- Operadores Aritméticos:
-  - ```+``` : Soma
-  - ```-``` : Subtração
-  - ```*``` : Multiplicação
-  - ```/``` : Divisão
-  - ```%``` : Módulo (Resto da Divisão)
-  - ```++``` : Incremento (+= 1)
-  - ```--``` : Decremento (-= 1)
-  - **Expressões Matemáticas seguem a ordem de prioridade padrão**
+### Operadores Aritméticos
 
-  ```c++
-  ...
-    int a = 5;
-    a \= 2;
-    // Como é inteiro, retorna 2 (Valor decimal Truncado)
-  ...
-  ```
+- ```+``` : Soma
+- ```-``` : Subtração
+- ```*``` : Multiplicação
+- ```/``` : Divisão
+- ```%``` : Módulo (Resto da Divisão)
+- ```++``` : Incremento (+= 1)
+- ```--``` : Decremento (-= 1)
+- **Expressões Matemáticas seguem a ordem de prioridade padrão**
+
+```c++
+...
+int a = 5;
+a \= 2;
+// Como é inteiro, retorna 2 (Valor decimal Truncado)
+...
+```
+
+- ```std::max(a, b)``` : Retorna o maior valor entre a e b
+- ```std::min(a, b)``` : Retorna o menor valor entre a e b
+- ```#include <cmath>```:
+  - ```pow(a, b)``` : Retorna a elevado a b
+  - ```sqrt(a)``` : Retorna a raiz quadrada de a
+  - ```abs(a)``` : Retorna o valor absoluto de a
+  - ```round(a)``` : Retorna o valor arredondado de a
+  - ```ceil(a)``` : Retorna o valor arredondado para cima de a
+  - ```floor(a)``` : Retorna o valor arredondado para baixo de a
 
 ## Datatypes (Dados Básicos)
 
@@ -185,13 +207,38 @@ int main() {
 ## Input
 
 - ```std::cin``` : Lê um valor do teclado
-- ```std::getline``` : Lê uma linha do teclado
+- Para de ler quando encontra um espaço ou uma quebra de linha
 
 ```c++
 ...
     std::string name;
     std::cin >> name;
-
+    // Exemplo de entrada: Cadu
+    std::cout << "Hello" << name << std::endl;
     
+    std::cin >> full_name;
+    // Exemplo de entrada: Cadu Carlos Caduw
+    std::cout << "Hello" << full_name << std::endl;
+    // Saída: Hello Cadu
 
+    // Saída: Cadu
+...
+```
+
+- ```std::getline``` : Lê uma linha inteira do teclado
+- Para de ler quando encontra uma quebra de linha
+
+```c++
+...
+    int age;
+    std::cin >> age;
+    // Exemplo de entrada: 20
+    std::getline(std::cin >> std::ws, name);
+    // Exemplo de entrada: Cadu Carlos Caduw
+    // std::ws: Ignora espaços em branco no início da linha
+
+    std::cout << "Hello" << fullname << std::endl;
+    std::cout << "You are " << age << " years old" << std::endl;
+    // Saída: Hello Cadu Carlos Caduw
+    //        You are 20 years old
 ```
