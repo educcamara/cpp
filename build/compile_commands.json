@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/Users/eduardo/Dropbox/Projects/cppProjects/project_1/build",
-  "command": "/usr/bin/clang++   -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -o CMakeFiles/maincpp.dir/main.cpp.o -c /Users/eduardo/Dropbox/Projects/cppProjects/project_1/main.cpp",
-  "file": "/Users/eduardo/Dropbox/Projects/cppProjects/project_1/main.cpp",
-  "output": "CMakeFiles/maincpp.dir/main.cpp.o"
-}
-]
