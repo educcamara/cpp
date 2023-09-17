@@ -10,6 +10,7 @@
 - [Typedefs/Using](#typedefsusing)
 - [Type Conversion (Conversão de Tipos)](#type-conversion-conversão-de-tipos)
 - [Input](#input)
+- [Sentenças If](#sentenças-if)
 
 ## Comandos Gerais
 
@@ -241,4 +242,27 @@ int main() {
     std::cout << "You are " << age << " years old" << std::endl;
     // Saída: Hello Cadu Carlos Caduw
     //        You are 20 years old
+```
+
+## Sentenças If
+
+- ```if``` : Executa um bloco de código se uma condição for verdadeira
+- ```else if``` : Executa um bloco de código se uma condição for verdadeira e a condição anterior for falsa
+- ```else``` : Executa um bloco de código se a condição de if for falsa
+
+```c++
+...
+    int age = 18;
+    
+    if (age >= 18) {
+        std::cout << "You are an adult" << std::endl;
+    } 
+    else if (age < 0){
+        std::cout << "You are not born yet" << std::endl;
+    } 
+    else {
+        std::cout << "You are not an adult" << std::endl;
+    }
+    // Saída: You are an adult
+...
 ```
