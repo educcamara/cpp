@@ -242,6 +242,7 @@ int main() {
     std::cout << "You are " << age << " years old" << std::endl;
     // Saída: Hello Cadu Carlos Caduw
     //        You are 20 years old
+...
 ```
 
 ## Sentenças If
@@ -288,5 +289,5 @@ int main() {
             std::cout << "Invalid Month" << std::endl;
             break;
     }
-
+...
 ```
