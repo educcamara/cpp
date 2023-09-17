@@ -1,0 +1,5 @@
+/Users/eduardo/Dropbox/Projects/cppProjects/project_1/build/CMakeFiles/maincpp.dir
+/Users/eduardo/Dropbox/Projects/cppProjects/project_1/build/CMakeFiles/package.dir
+/Users/eduardo/Dropbox/Projects/cppProjects/project_1/build/CMakeFiles/package_source.dir
+/Users/eduardo/Dropbox/Projects/cppProjects/project_1/build/CMakeFiles/edit_cache.dir
+/Users/eduardo/Dropbox/Projects/cppProjects/project_1/build/CMakeFiles/rebuild_cache.dir
