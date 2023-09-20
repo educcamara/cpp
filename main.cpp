@@ -1,12 +1,14 @@
 #include <iostream>
-#include <cmath>
 
 int main(){
+    char op;
     float a;
     float b;
-    float c;
 
-    std::cout << "Calculadora de hipotenusa" << '\n';
+    std::cout << "Calculadora de 2 números" << '\n';
+
+    std::cout << "Digite o operador: ";
+    std::cin >> op;
 
     std::cout << "Digite o valor de a: ";
     std::cin >> a;
@@ -14,10 +16,25 @@ int main(){
     std::cout << "Digite o valor de b: ";
     std::cin >> b;
 
-    c = sqrt(pow(a, 2) + pow(b, 2));
-
-    std::cout << "O valor da hipotenusa é: " << c << '\n';
-
+    switch (op) {
+        case '+':
+            std::cout << "a + b = " << a + b << '\n';
+            break;
+        case '-':
+            std::cout << "a - b = " << a - b << '\n';
+            break;
+        case '*':
+            std::cout << "a * b = " << a * b << '\n';
+            break;
+        case '/':
+            std::cout << "a / b = " << a / b << '\n';
+            break;
+        default:
+            std::cout << "Números ou operador inválidos." << '\n';
+            break;
+        
+    }
+        
     return 0;
 }
 // Comentario
